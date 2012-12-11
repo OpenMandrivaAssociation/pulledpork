@@ -33,3 +33,11 @@ install -m 755 pulledpork.pl %{buildroot}%{_bindir}/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+
+%changelog
+* Wed Jun 15 2011 Leonardo Coelho <leonardoc@mandriva.com> 0.6.0-1mdv2011.0
++ Revision: 685417
+- first mandriva version
+- Created package structure for pulledpork.
+
