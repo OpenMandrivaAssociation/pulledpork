@@ -4,19 +4,18 @@
 Name: %{name}
 Summary: Pulledpork designed to make your snort rules fly
 Version: %{version}
-Release: %mkrel 1
+Release: 2
 License: GPLv2
 Group: Monitoring
 Source: http://pulledpork.googlecode.com/files/%{name}-%{version}.tar.gz
 URL:	http://code.google.com/p/pulledpork/
 Requires: perl-Archive-Tar, perl-Crypt-SSLeay
-BuildRoot: %_tmppath/%{name}-%{version}-buildroot
 
 %description
-PulledPork designed to make your Snort rules fly with the intent of handling all rules.
+PulledPork designed to make your Snort rules fly with the intent of handling
+all rules.
 
 %prep
-rm -rf %{buildroot}
 %setup -q -n %{name}-%{version}
 
 %install
@@ -30,9 +29,6 @@ install -m 755 pulledpork.pl %{buildroot}%{_bindir}/
 %{_bindir}/pulledpork.pl
 %{_sysconfdir}/%{name}/
 %doc README LICENSE doc/*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
