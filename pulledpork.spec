@@ -4,7 +4,7 @@
 Name: %{name}
 Summary: Pulledpork designed to make your snort rules fly
 Version: %{version}
-Release: 2
+Release: 3
 License: GPLv2
 Group: Monitoring
 Source: http://pulledpork.googlecode.com/files/%{name}-%{version}.tar.gz
