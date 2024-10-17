@@ -8,7 +8,7 @@ Release: 3
 License: GPLv2
 Group: Monitoring
 Source: http://pulledpork.googlecode.com/files/%{name}-%{version}.tar.gz
-URL:	http://code.google.com/p/pulledpork/
+URL:	https://code.google.com/p/pulledpork/
 Requires: perl-Archive-Tar, perl-Crypt-SSLeay
 
 %description
